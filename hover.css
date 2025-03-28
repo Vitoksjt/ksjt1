@@ -1,0 +1,41 @@
+div{
+    width:750px;
+    height:500px;
+    text-align: center;
+    margin:0 auto;
+}
+
+.hoverbox{
+    list-style: none;
+}
+
+.hoverbox .preview{
+    display: none;
+}
+.hoverbox li{
+    float:left;
+    border:1px solid;
+    border-color: #ddd #bbb #aaa #ccc;
+    background-color: #ddd;
+    padding:5px;
+    margin:2px;
+    position: relative;
+
+}
+
+.hoverbox img{
+    border:1px solid;
+    border-color:#aaa #ccc #ddd #ddd ;
+    width:100px;
+    height: 75px;
+    padding: 2px;
+}
+.hoverbox a:hover img.preview{
+    display: block;
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: -20px;
+    left: -50px;
+    z-index: 1;
+}
